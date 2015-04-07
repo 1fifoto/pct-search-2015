@@ -4,6 +4,8 @@ Pacific Crest trail (PCT) Search and Map function
 This repository contains the following related sub-projects
 1. A simple Python script that returns the closest Pacific Crest Trail mile
 marker to a supplied latitude and longitude coordinate.
+2. A simple PHP web-site that takes a supplied latitude and longitude
+coordinate and presents the closest Pacific Crest Trail mile marker.
 
 pct-search.py
 =============
@@ -31,4 +33,12 @@ values are then manually inserted into the Google docs Mileage Log spreadsheet.
 Note: By internally uncommenting lines in pct-search.py, it can also generate
 either `mile_markers` for `index.php` or `pctMileMarkers` for `script.js`
 mentioned below.
+
+pct-search/index.php
+====================
+Alternatively to the `pct-search.py` is the `pct-search/index.php` web-site
+PHP file which provides a web interface to convert a latitude and longitude
+(typically sent by a SPOT Satellite Messenger) to the nearest PCT mile. The
+latitude and longitude coordinates, and the mile marker waypoint values are
+then manually inserted into the Google docs Mileage Log spreadsheet.
 

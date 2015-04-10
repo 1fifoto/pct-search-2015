@@ -1,0 +1,2 @@
+MAILTO="bwatt@1fifoto.com"
+@hourly wget -q https://script.google.com/macros/s/AKfycbzbvgQlejcob-2lTrH_Vb_J3QXtuXBtFB3Ed1AtG3HSRY5wg986/exec?jsonp=plotDayPoints -O - > /home/bwatt/1fifoto.com/pct-2015/day-points.js

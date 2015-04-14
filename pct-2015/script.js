@@ -60,15 +60,15 @@ function plotDayPoints(dayPoints) {
             position: position,
             icon: icon,
             html: 
-                '<strong>' + dayPoints[0][0] + '</strong>: ' + dayPoints[i][0] + '<br/>' +
-                '<strong>' + dayPoints[0][1] + '</strong>: ' + dateParts[0] + ', ' + dateParts[1] + ' ' + dateParts[2] + ', ' + dateParts[5] + '<br/>' +
-                '<strong>' + dayPoints[0][2] + '</strong>: ' + dayPoints[i][2] + '<br/>' +
-                '<strong>' + dayPoints[0][3] + '</strong>: ' + dayPoints[i][3] + '<br/>' +
-                '<strong>' + dayPoints[0][4] + '</strong>: ' + dayPoints[i][4] + '<br/>' +
-                '<strong>' + dayPoints[0][5] + '</strong>: ' + dayPoints[i][5] + '<br/>' +
-                '<strong>' + dayPoints[0][6] + '</strong>: ' + dayPoints[i][6] + '<br/>' +
-                '<strong>' + dayPoints[0][7] + '</strong>: ' + dayPoints[i][7] + '<br/>' +
-                '<strong>' + dayPoints[0][8] + '</strong>: ' + dayPoints[i][8]
+                '<strong>' + dayPoints[0][0] + '</strong>: ' + dayPoints[i][0] + '<br/>' + // Day number
+                '<strong>' + dayPoints[0][1] + '</strong>: ' + dateParts[0] + ', ' + dateParts[1] + ' ' + dateParts[2] + ', ' + dateParts[5] + '<br/>' + // Date
+                '<strong>' + dayPoints[0][2] + '</strong>: ' + dayPoints[i][2] + '<br/>' + // Latitude, longitude
+                '<strong>' + dayPoints[0][3] + '</strong>: ' + dayPoints[i][3].toFixed(1) + '<br/>' + // Mileage
+                '<strong>' + dayPoints[0][4] + '</strong>: ' + dayPoints[i][4].toFixed(1) + '<br/>' + // Expected
+                '<strong>' + dayPoints[0][5] + '</strong>: ' + dayPoints[i][5].toFixed(1) + '<br/>' + // Banked
+                '<strong>' + dayPoints[0][6] + '</strong>: ' + dayPoints[i][6].toFixed(1) + '<br/>' + // Daily
+                '<strong>' + dayPoints[0][7] + '</strong>: ' + dayPoints[i][7].toFixed(1) + '<br/>' + // Average
+                '<strong>' + dayPoints[0][8] + '</strong>: ' + dayPoints[i][8] // Comment
         });
 
         google.maps.event.addListener(marker, 'click', function() {

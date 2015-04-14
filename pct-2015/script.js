@@ -40,7 +40,7 @@ function plotDayPoints(dayPoints) {
     for (var i = 1; i < dayPoints.length; i++) {
         // only process rows that have a lat,lng
         if (!dayPoints[i][2]) {
-            continue;
+            break;
         }
         var dateParts = dayPoints[i][1].split(" "); // e.g. Wed Apr 16 00:00:00 GMT-07:00 2014
         var coords = dayPoints[i][2].split(",");

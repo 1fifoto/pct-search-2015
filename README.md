@@ -1,5 +1,5 @@
 # pct-search-2015
-Pacific Crest trail (PCT) Search and Map function
+Pacific Crest Trail (PCT) Search and Map function
 
 This repository contains the following related sub-projects
 1. A simple Python script that returns the closest Pacific Crest Trail mile
